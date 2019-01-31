@@ -1,0 +1,189 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Лабораторная №1</title>
+    <link href="~/Content/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script type='text/javascript' src="~/Scripts/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="~/Content/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gretong Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <!-- start menu -->
+    <link href="~/Content/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/Scripts/megamenu.js"></script>
+    <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+    <script src="~/Scripts/menu_jquery.js"></script>
+    <script src="~/Scripts/simpleCart.min.js"> </script>
+
+
+    <style>
+        body {
+            background-image: url(/Content/images/background_solid_bright_44011_2560x1600.jpg); /*Путь к фоновому изображению */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /*    background-color: #ff9999;  Цвет фона */
+        }
+    </style>
+</head>
+<body>
+    <div class="header_bg">
+        <div class="container">
+            <div class="header">
+                <div class="head-t">
+                    <div class="logo">
+                        <a href="\Views\Home\Index.cshtml" style="color: #eab1e1"> <img src="\Content\images\logo0.jpg" alt=""></a>
+                    </div>
+
+                    <div class="header_right">
+                        <div class="rgt-bottom">
+                           
+                            
+                            
+                            <div class="cart box_1">
+                                <a href="checkout.html">
+                                    <h3 style="color: #eab1e1"> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> объектов)<img src="~/Content/images/bag.png" alt=""></h3>
+                                </a>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="crt-btn">
+                               @Html.ActionLink("Корзина", "Checkout", "Home")
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="search">
+                            <form>
+                                <input type="text" value="" placeholder="search...">
+                                <input type="submit" value="">
+                            </form>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                
+
+                <div class="arriv">
+                    <div class="container">
+                        <div class="arriv-top">
+                            <h1 style="color:#eab1e1; text-align: center">
+                                Один прекрасный букет вместо тысячи слов
+                                <p></p>
+                            </h1>
+                            <div class="col-md-6 arriv-left">
+                                <img src="\Content\images\359.970_cached600x500.jpg" class="img-responsive" alt="">
+                                <div class="arriv-info">
+                                    <h3>НОВИНКИ</h3>
+                                    <p></p>
+                                    <div class="crt-btn">
+                                        <a href="details.html">SHOP NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 arriv-right">
+                                <img src="\Content\images\Frut-12.jpg" class="img-responsive" alt="">
+                                <div class="arriv-info">
+                                    <h3>ОРИГИНАЛЬНЫЕ</h3>
+                                    <p></p>
+                                    <div class="crt-btn">
+                                        <a href="details.html">SHOP NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="arriv-las">
+                            <div class="col-md-6 arriv-left">
+                                <img src="\Content\images\rose-korsina-8.jpg" class="img-responsive" alt="">
+                                <div class="arriv-info2">
+                                    <a href="details.html"><h3>___ Голландские розы<i class="ars"></i></h3></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 arriv-right">
+                                <img src="\Content\images\pionovidnye-rozy-red-piano-v-korobke-baby-foto-1.jpg" class="img-responsive" alt="">
+                                <div class="arriv-info3">
+                                    <h3>ЦВЕТЫ В ИЗЯЩНОЙ КРОБОЧКЕ</h3>
+                                    <div class="crt-btn">
+                                        @Html.ActionLink("Подробно","Details", "Home")
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div class="container">
+                        <div class="col-md-6 s-c">
+                            <li>
+                                <div class="fooll">
+                                    <h5 style="color: #eab1e1">follow us on</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="social-ic">
+                                    <ul>
+                                        <li><a href="#"><i class="facebok"> </i></a></li>
+                                        <li><a href="#"><i class="twiter"> </i></a></li>
+                                        <li><a href="#"><i class="goog"> </i></a></li>
+                                        <li><a href="#"><i class="be"> </i></a></li>
+                                        <div class="clearfix"></div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <div class="clearfix"> </div>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div class="container">
+                            <div class="col-md-3 cust">
+                                <h4 style="color: #eab1e1">ПОДДЕРЖКА КЛИЕНТОВ</h4>
+                                <li><a href="#" style="color: #eab1e1">Help Center</a></li>
+                                <li><a href="#" style="color: #eab1e1">FAQ</a></li>
+                                <li><a href="buy.html" style="color: #eab1e1">Как купить?</a></li>
+                                <li><a href="#" style="color: #eab1e1">Доставка</a></li>
+                            </div>
+
+                            <div class="col-md-5 our-st">
+                                <div class="our-left">
+                                    <h4 style="color: #eab1e1">КАК СВЯЗАТЬСЯ С НАМИ</h4>
+                                </div>
+
+                                <div class="clearfix"> </div>
+                                <li style="color: #eab1e1"><i class="add"> </i>мун. Кишинев ул. А. Руссо 18/1 кв. 120</li>
+                                <li style="color: #eab1e1"><i class="phone"> </i>022-34-73-25</li>
+                                <li><a href="mailto:cerneiiriska@gmail.com" style="color: #eab1e1"><i class="mail"> </i>cerneiiriska@gmail.com </a></li>
+
+                            </div>
+                            <div class="clearfix"> </div>
+                            <p style="color: #eab1e1">© 2018 FLOWER_BUTIQUE by Cernei Irina TI-164 </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+</body>
+</html>
